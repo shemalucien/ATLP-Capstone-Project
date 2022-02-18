@@ -1,0 +1,153 @@
+.experience{
+    width:100%;
+      position:relative;
+      padding:2rem 0;
+      background-color: black;
+  }
+  .experience .title_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+  }
+  .experience section{
+    width:100%;
+    overflow-x:hidden;
+    white-space: nowrap;
+    overflow-y:hidden;
+    scrollbar-width:none;
+    scroll-behavior: smooth;
+    transition:0.5s;
+    }
+    
+    .experience section .card{
+    display:inline-block;
+    background-color:black;
+    padding:0.5rem;
+    border-radius:5px;
+    border:1px solid rgba(1,1,1,0.1);
+    position:relative;
+    overflow:hidden;
+    width:30%;
+    margin:10px;
+    }
+    
+    .experience  section .card .tag{
+    position:absolute;
+    top:15px;
+    left:15px;
+    padding:4px 10px;
+    color: white;
+    background-color:cyan;
+    text-align:center;
+    border-radius:5px;
+    font-size:13px;
+    overflow:hidden;
+    }
+    
+    .experience section .card img{
+    width:100%;
+    object-fit:cover;
+    height:200px;
+    }
+    
+    .experience section .card .content{
+    padding:0rem 1rem;
+    white-space:pre-wrap;
+    }
+    
+    .experience section .card .content p{
+      color: white;
+    }
+    .experience section .card .title{
+    font-size:1em;
+    color:white;
+    font-weight: bold;
+    
+    
+    }
+    
+    .experience:hover  .buttons{
+    opacity:1;
+    }
+    
+    .experience .fa-angle-double-right{
+    position:absolute;
+    top:50%;
+    right:30px;
+    background:#000;
+    padding:20px;
+    border-radius:50%;
+    color:#fff;
+    }
+    .experience .fa-angle-double-left{
+    position:absolute;
+    top:50%;
+    left:30px;
+    background:#000;
+    padding:20px;
+    border-radius:50%;
+    color:#fff;
+    }
+    .experience .angles{
+    opacity:0.7;
+    transition:0.5s;
+    }
+    .experience .angles:hover{
+    opacity:1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    
+    @media (max-width:920px){
+    .experience section .card{
+    width:100%;
+    margin:0;
+    margin-right:15px;
+    }
+    }
+    /*CLIENT LOGO SLIDER SECTION*/
+    .slider {
+      background: white;
+      box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+      height: 100px;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      }
+      .slider::before, .slider::after {
+      background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+      content: "";
+      height: 100px;
+      position: absolute;
+      width: 200px;
+      z-index: 2;
+      }
+      .slider::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+      }
+      .slider::before {
+      left: 0;
+      top: 0;
+      }
+      .slider .slide-track {
+      -webkit-animation: scroll 40s linear infinite;
+      animation: scroll 40s linear infinite;
+      display: flex;
+      width: calc(250px * 14);
+      }
+      .slide-track:hover{
+      -webkit-animation-play-state:paused;
+        -moz-animation-play-state:paused;
+        -o-animation-play-state:paused;
+        animation-play-state:paused;
+      }
+      .slider .slide {
+      height: 100px;
+      width: 250px;
+      }
+      

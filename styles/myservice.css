@@ -1,0 +1,64 @@
+/*My Services*/
+.service{
+    width:100%;
+    background-color:black;
+    padding:2rem;
+    border-top:4px solid black;
+    }
+    .service .title_header{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: white;
+    }
+    
+    .service .title {
+     font-weight: bold;
+     color: white;
+    }
+    
+    .service section{
+    padding:0rem 2rem;
+    display:flex;
+    align-items:top;
+    flex-wrap: wrap;
+    }
+    
+    .service section .card{
+    width:100%;
+    background-color:transparent;
+    padding:2rem;
+    text-align:center;
+    border-radius:5px;
+    margin:15px;
+    transition:0.5s;
+    color:white;
+    background-color:gray;
+    }
+    
+    .service section .card:hover{
+    -webkit-box-shadow: inset 1px 1px 10px rgba(255,255,255,0.3);
+    -moz-box-shadow:    inset 1px 1px 10px rgba(255,255,255,0.3);
+    box-shadow:         inset 1px 1px 10px rgba(255,255,255,0.3);
+    }
+    
+    .service section .card .title{
+    font-size:1.2em;
+   text-align: center;
+    }
+    
+    @media (max-width:920px){
+    .service{
+    padding:2rem 0rem;
+    }
+    .service section{
+    padding:0rem 1rem;
+    flex-wrap:wrap;
+    }
+    .service section .card{
+    margin:10px 0;
+    }
+    }
+  
