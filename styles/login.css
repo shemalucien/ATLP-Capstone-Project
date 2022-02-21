@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in Sign Up Pages</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <div class="welcome">
+                    <img src="https://img.icons8.com/ios/50/000000/home-page.png" />
+                    <img src="https://images.unsplash.com/photo-1621106036911-964146b9f97c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+                        alt="Welcome Photo">
+                    <h1>Welcome to My Portfolio</h1>
+                </div>
+
+                <span class="title">Hello ! Welcome Back. </span>
+                <span> Log in with your data that you entered during registration</span>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter your password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <a href="#" class="text">Forgot password?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Sign in">
+                    </div>
+                    <div class="or">
+                        <span>Or</span>
+                    </div>
+                    <div class="input-field button">
+                        <input type="button" value="Sign in with Google">
+                    </div>
+                </form>
+
+
+                <div class="login-signup">
+                    <span class="text">Don’t have an account? ?
+                        <a href="#" class="text signup-link">Signup</a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div class="form signup">
+                <div class="welcome">
+
+                    <img src="https://img.icons8.com/ios/50/000000/home-page.png" />
+                    <img src="https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80"
+                        alt="Sign Up Image">
+                    <h1>Glad to see you !! Lets get Started</h1>
+                </div>
+                <span class="title">Create Account</span>
+                <span>Fill your details to get registered with us !</span>
+
+
+                <form action="#">
+                    <label>Name</label>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your FirstName" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your LastName" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <label>Email</label>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <label>Password</label>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Create a password" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Confirm a password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="SignUp">
+                    </div>
+                    <div class="or">
+                        <span>Or</span>
+                    </div>
+                    <div class="input-field button">
+                        <input type="button" value="SignUp With Google">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Already Registered ?
+                        <a href="#" class="text login-link">Sign In</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
