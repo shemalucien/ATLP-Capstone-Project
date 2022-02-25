@@ -1,0 +1,277 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+
+a{
+  top: 0;
+  right: 0;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    padding: .2em;
+  }
+  a:hover{
+    background-color: grey;
+    color: cyan;
+  }
+  .logo{
+    color: white;
+    font-weight: bold;
+    padding-left: 1em;
+  }
+nav{
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: black;
+  z-index: 999;
+  width: 30%;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+-webkit-transition: -webkit-transform .5s ease-in-out;
+transition: -webkit-transform .5s ease-in-out;
+transition: transform .5s ease-in-out;
+transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+nav ul{
+  list-style-type: none;
+}
+nav ulli a{
+  color:white;
+background:black;
+  padding: 75em 2em;
+  display: block;
+  float: right;
+  margin: 1em 1em;
+
+}
+nav ulli a:hover{
+  background: grey;
+}
+nav .close{
+  float: right;
+  margin: 2em;
+  width: 2.5em;
+  color: white;
+}
+header{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header svg{
+  width: 2.3em;
+  margin-top: -.6em;
+  cursor: pointer;
+}
+.open-nav{
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+#navbar{
+  overflow: hidden;
+  background-color: black;
+}
+.sticky {
+  position: fixed;
+  top:0;
+  right: 0;
+  width: 100%;
+  color:white;
+
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/*blog section*/
+.heading .logo-img svg{
+  width: 2em;
+  height: 2em; 
+  }
+  
+  .heading {
+      color: #00ffff;
+      display: flex;
+      flex-direction: row;
+      gap: 20em;
+  }
+  .heading li{
+      list-style-type: none;
+      font-size: 1em;
+  }
+  .introduction{
+      display: flex;
+      flex-direction: row;
+      
+  }
+  .introduction .blogpic{
+      background: url('../assets/images/blog-one\ \(1\).jpg');
+      width: 50%;
+      height: 50vh;
+      margin: 1em 0em;
+      background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  }
+  
+  .introduction .intro-msg{
+      height: 50vh;
+      width: 50%;    
+      padding-left: 1.5em;
+  }
+  .introduction .intro-msg h2{
+      color: #00ffff;
+      font-size: 1.5em;
+  }
+  .introduction .intro-msg p{
+      font-size: 1em;
+  }
+  
+  .description{
+      font-size: 1em;
+  }
+  section .comments{
+      margin-top: 5em 3em;
+      padding-left: 200px;
+     text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap:1.5rem;
+  }
+  
+   section .comments form{
+       
+       align-items: center;
+      background:#fff;
+      width: 50%;
+      height: 30vh;
+  }
+  
+   section .comments form .box1
+  {
+      top: 0;
+      left: 0;
+      width:50%;
+      border: .1rem solid #333;
+      margin:.5rem 0; 
+  }
+  section .comments form .box2{
+      top: 0;
+      right: 0;
+      width:50%;
+      border: .1rem solid #333;
+      margin:.5rem 0; 
+  }
+  
+   section .comments form textarea{
+      border: .1rem solid #333;
+      color:black;
+      font-weight: bold;
+      text-transform: none;
+      font-size: 1rem;
+      padding:1rem 0; 
+      margin:1rem 0; 
+      /* resize: none; */
+      width: 60%;
+  }
+  
+  section .comments form .box1:focus,
+  section .comments form .box2:focus,
+  section .comments form textarea:focus{
+      border-color: black;
+  }
+  
+  section .comments form .box1::placeholder,
+  section .comments form .box2::placeholder,
+  section .comments form textarea::placeholder{
+      text-transform: capitalize;
+      font-weight: bold;
+      color:black;
+  }
+  
+  section .comments form .btn{
+      display: flex;
+      flex-direction:row;
+      padding:.5rem 1em; 
+      margin:.5rem 7em; 
+      margin-bottom: .5rem;
+      color: white;
+      background-color: aqua;
+      border-radius: 10rem;
+  }
+  @media only screen and (min-width: 680px) {
+    body {
+      margin: 1em 1em;
+      font-family: 'Poppins', sans-serif;
+    }
+ 
+  }
+  @media only screen and(min-width:1200px){
+    .heading,.introduction,.description,.comments{
+      width: 1200px;
+      margin: 0 auto;
+    }
+   
+  }
+  @media only screen and (min-width: 920px) {
+    .menu {
+      display: none;
+    }
+    nav {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      position: unset;
+      display: block;
+      width: auto;
+      height: auto;
+      background: none;
+    }
+    nav svg.close {
+      display: none;
+    }
+    nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0;
+    }
+    nav li a {
+      color:white;
+      padding: .2em 1em;
+      font-size: .9rem;
+    }
+    nav li a:hover {
+      background:grey;
+      text-decoration: underline;
+    }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

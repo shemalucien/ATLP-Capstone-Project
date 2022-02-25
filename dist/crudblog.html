@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRud Blog</title>
+</head>
+
+<body>
+    <form class="addblog">
+        <input type="text" name="title" placeholder="Enter the title of the blog">
+        <input type="text" name="author" placeholder="Enter the name of the author">
+        <input type="date" name="publicationdate">
+        <input type="text" name="introduction" placeholder="Enter the introduction">
+        <!-- <input type="file" id="img" name="img" onchange='chooseFile(event)' accept="image/*"> -->
+        <input type="file " name="files[] " id="files ">
+        <input type="text" name="description" placeholder="Enter the description">
+        <button type="button" onclick="uploadimage()"></button>
+    </form>
+    <script src="/dist/main.js"></script>
+</body>
+
+</html>
