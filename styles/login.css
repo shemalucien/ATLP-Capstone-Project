@@ -1,121 +1,140 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    background-color: black;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+section .imgBx:before
+{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in Sign Up Pages</title>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="login.css">
-</head>
+section .imgBx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
 
-<body>
+section .imgBx img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
 
-    <div class="container">
-        <div class="forms">
-            <div class="form login">
-                <div class="welcome">
-                    <img src="https://img.icons8.com/ios/50/000000/home-page.png" />
-                    <img src="https://images.unsplash.com/photo-1621106036911-964146b9f97c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
-                        alt="Welcome Photo">
-                    <h1>Welcome to My Portfolio</h1>
-                </div>
+section .contentBx{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+  align-items: center;
+}
 
-                <span class="title">Hello ! Welcome Back. </span>
-                <span> Log in with your data that you entered during registration</span>
-                <form action="#">
-                    <div class="input-field">
-                        <input type="text" placeholder="Enter your email" required>
-                        <i class="uil uil-envelope icon"></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" class="password" placeholder="Enter your password" required>
-                        <i class="uil uil-lock icon"></i>
-                        <i class="uil uil-eye-slash showHidePw"></i>
-                    </div>
+section .contentBx .formBx{
+  width: 50%;  
+}
 
-                    <div class="checkbox-text">
-                        <a href="#" class="text">Forgot password?</a>
-                    </div>
-
-                    <div class="input-field button">
-                        <input type="button" value="Sign in">
-                    </div>
-                    <div class="or">
-                        <span>Or</span>
-                    </div>
-                    <div class="input-field button">
-                        <input type="button" value="Sign in with Google">
-                    </div>
-                </form>
-
-
-                <div class="login-signup">
-                    <span class="text">Don’t have an account? ?
-                        <a href="#" class="text signup-link">Signup</a>
-                    </span>
-                </div>
-            </div>
-
-            <!-- Sign Up Form -->
-            <div class="form signup">
-                <div class="welcome">
-
-                    <img src="https://img.icons8.com/ios/50/000000/home-page.png" />
-                    <img src="https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80"
-                        alt="Sign Up Image">
-                    <h1>Glad to see you !! Lets get Started</h1>
-                </div>
-                <span class="title">Create Account</span>
-                <span>Fill your details to get registered with us !</span>
+section .contentBx .formBx h2{
+    color:cyan;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+}
 
 
-                <form action="#">
-                    <label>Name</label>
-                    <div class="input-field">
-                        <input type="text" placeholder="Enter your FirstName" required>
-                        <i class="uil uil-user"></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="text" placeholder="Enter your LastName" required>
-                        <i class="uil uil-user"></i>
-                    </div>
-                    <label>Email</label>
-                    <div class="input-field">
-                        <input type="text" placeholder="Enter your email" required>
-                        <i class="uil uil-envelope icon"></i>
-                    </div>
-                    <label>Password</label>
-                    <div class="input-field">
-                        <input type="password" class="password" placeholder="Create a password" required>
-                        <i class="uil uil-lock icon"></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" class="password" placeholder="Confirm a password" required>
-                        <i class="uil uil-lock icon"></i>
-                        <i class="uil uil-eye-slash showHidePw"></i>
-                    </div>
+section .contentBx .formBx h3{
+    color: white;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+}
 
-                    <div class="input-field button">
-                        <input type="button" value="SignUp">
-                    </div>
-                    <div class="or">
-                        <span>Or</span>
-                    </div>
-                    <div class="input-field button">
-                        <input type="button" value="SignUp With Google">
-                    </div>
-                </form>
+section .contentBx .formBx .input-field{
+    margin-bottom: 20px;
 
-                <div class="login-signup">
-                    <span class="text">Already Registered ?
-                        <a href="#" class="text login-link">Sign In</a>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+}
 
-</html>
+section .contentBx .formBx .input-field span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+section .contentBx .formBx .input-field input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: bold;
+    border: 1px solid white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: white;
+     background: transparent;
+     border-radius: 20px;
+}
+section .contentBx .formBx .input-field input[type="submit"]{
+ background: cyan;
+ color: white;
+ outline: none;
+ border: none;
+ font-weight: 500;
+ cursor: pointer;
+}
+section .contentBx .formBx .input-field input[type="submit"]:hover{
+    background: gray;
+}
+section .contentBx .formBx .input-field p{
+    color: white;
+}
+section .contentBx .formBx .input-field p a{
+    color: cyan;
+}
+
+@media (max-width:768px)
+{
+section .imgBx{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%
+}
+section .contentBx
+{
+display:flex;
+justify-content:center;
+align-items:center;
+width:100%;
+height:100%;
+z-index:1;
+}
+section .contentBx .formBx{
+width:100%;
+padding:40px;
+background:black;
+margin:50px;
+
+}
+}
