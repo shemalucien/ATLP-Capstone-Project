@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    background-color: black;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+section .imgBx:before
+{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+section .imgBx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+section .imgBx img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+section .contentBx{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+  align-items: center;
+}
+
+section .contentBx .formBx{
+  width: 50%;  
+}
+
+section .contentBx .formBx h2{
+    color:cyan;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+
+section .contentBx .formBx h3{
+    color: white;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+section .contentBx .formBx .input-field{
+    margin-bottom: 20px;
+
+}
+
+section .contentBx .formBx .input-field span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+section .contentBx .formBx .input-field input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: bold;
+    border: 1px solid white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: white;
+     background: transparent;
+     border-radius: 20px;
+}
+section .contentBx .formBx .input-field input[type="submit"]{
+ background: cyan;
+ color: white;
+ outline: none;
+ border: none;
+ font-weight: 500;
+ cursor: pointer;
+}
+section .contentBx .formBx .input-field input[type="submit"]:hover{
+    background: gray;
+}
+section .contentBx .formBx .input-field p{
+    color: white;
+}
+section .contentBx .formBx .input-field p a{
+    color: cyan;
+}
+
+@media (max-width:768px)
+{
+section .imgBx{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%
+}
+section .contentBx
+{
+display:flex;
+justify-content:center;
+align-items:center;
+width:100%;
+height:100%;
+z-index:1;
+}
+section .contentBx .formBx{
+width:100%;
+padding:40px;
+background:black;
+margin:50px;
+
+}
+}

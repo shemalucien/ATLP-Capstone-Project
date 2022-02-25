@@ -1,0 +1,38 @@
+.aboutme{
+    margin:10px auto 0 auto;
+    margin-top: 0px;
+    height: 100vh;
+    width: 50%;
+    background-color: black;
+    float: right;
+  
+  
+  }
+  .profile-picture{
+    background: url('../assets/images/profile1.jpg');
+    background-size: cover;
+    margin-top: 0px;
+    float: left;
+    width: 50%;
+    padding: 0;
+    height: 100vh;
+  }
+  .aboutme h1{
+  color: white;
+  font-size: 1.5rem;
+  
+  }
+  .aboutme h3{
+    color: aqua;
+    font-size:1.8rem ;
+  
+  }
+  .aboutme p{
+    color:white;
+    font-size: 1.rem;
+  }
+  
+  .identifiations{
+    font-weight: bold;
+  }
+   
